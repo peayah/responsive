@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 16px
+}
+
+body {
+    background-color: #fffff0;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #2d3c49;
+}
+
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.5em;
+}
+
+
+/*HEADER*/
+header {
+    display: flex;
+    width: 100%;
+}
+
+hr {
+    width: 100%;
+    border-top: .1em solid #2d3c49;
+    border-bottom: .1em solid #7d97ad;
+}
+
+#business_name {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+#business_name h1,
+h2 {
+    font-family: Overlock, sans-serif;
+    text-align: right;
+    line-height: 0.25em;
+    vertical-align: bottom;
+
+}
+
+#business_name h1 {
+    font-size: 3.5em;
+    text-transform: uppercase;
+}
+
+#business_name h2 {
+    font-size: 2em;
+}
+
+
+/*MAIN*/
+
+#main {
+    width: 100%;
+    padding-top: 1em;
+    display: block;
+    position: relative;
+    margin: 0;
+}
+
+#main figure,
+#main picture,
+#main img {
+    float: left;
+    margin: auto auto -1.5em;
+    width: 100%;
+    padding-bottom: 0;
+}
+
+#main figure h3 {
+    font-size: 2em;
+    padding: 0 1em;
+    color: #fff;
+    font-family: Overlock, sans-serif;
+    position: relative;
+    bottom: 4em;
+}
+
+/*FEATURED */
+#featured_article {
+    width: 60%;
+    padding-top: 0.25em;
+    padding-right: 3em;
+    float: left;
+}
+
+#featured_article figure,
+#featured_article picture,
+#featured_article img {
+    float: left;
+    margin: auto;
+    width: 100%;
+}
+
+#featured_article figure {
+    margin-bottom: 1.5em;
+}
+
+#featured_article h2 {
+    color: #7d97ad;
+    text-align: left;
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+#other_articles {
+    width: 40%;
+    padding-top: 0.25em;
+    float: left;
+}
+
+.small_article {
+    width: 100%;
+    float: left;
+}
+
+.small_article:last-of-type {
+    margin-right: 0;
+}
+
+figure,
+picture,
+img {
+    width: 100%;
+}
+
+picture,
+img {
+    padding-bottom: 0.5em;
+}
+
+figure {
+    margin: 0;
+}
+
+.small_article_header {
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: Overlock, sans-serif;
+    font-size: 1.5em;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.small_article_description {
+    margin-top: 0;
+}
+
+footer {
+    text-align: center;
+    width: 100%
+}
+
+footer a {
+    text-decoration: none;
+    color: #2d3c49;
+    padding: 0.5em;
+}
+
+footer p {
+    font-size: 1.75em;
+}
+
+@media screen and (max-width: 800px) {
+    #business_name h1 {
+        font-size: 3em;
+    }
+
+    #business_name h2 {
+        font-size: 1.5em;
+    }
+
+    #featured_article {
+        width: 100%;
+        padding-top: 0.25em;
+        padding-right: 3em;
+        float: left;
+    }
+
+    #featured_article h2 {
+        color: #7d97ad;
+        text-align: left;
+        font-size: 1.5em;
+        line-height: 1.2em;
+    }
+
+    #other_articles {
+        width: 100%;
+        padding-top: 0.25em;
+        float: left;
+    }
+
+    #main figure h3 {
+        font-size: 1.7em;
+        padding: 0 1em;
+        color: #fff;
+        font-family: Overlock, sans-serif;
+        position: relative;
+        bottom: 4em;
+    }
+
+    #other_articles h2 {
+        line-height: 1.2em;
+    }
+
+    .small_article {
+        width: 50%;
+        float: left;
+    }
+
+    .small_article:last-of-type {
+        padding-left: 1em;
+    }
+
+    .small_article:first-of-type {
+        padding-right: 1em;
+    }
+
+    #featured_article h2 {
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (max-width: 646px) {
+    #featured_article h2 {
+        margin-top: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 550px) {
+    #business_name h1 {
+        font-size: 2.5em;
+    }
+
+    #business_name h2 {
+        font-size: 1.5em;
+    }
+
+    #main figure h3 {
+        font-size: 1.75em;
+        padding: 0 0.55em;
+        font-family: Overlock, sans-serif;
+    }
+
+    #featured {
+        display: block;
+    }
+
+    #featured_article {
+        padding-right: 0;
+    }
+
+    .small_article {
+        width: 100%;
+        margin: 0;
+        float: left;
+    }
+
+    .small_article:last-of-type {
+        padding-left: 0;
+    }
+
+    .small_article:first-of-type {
+        padding-right: 0;
+    }
+
+    #featured_article h2 {
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (max-width: 535px) {
+    #featured_article h2 {
+        margin-top: 0;
+    }
+
+    #main figure h3 {
+        font-size: 1.5em;
+        padding: 0 0.55em;
+        font-family: Overlock, sans-serif;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #featured_article h2 {
+        margin-top: 0;
+    }
+}
